@@ -1,0 +1,14 @@
+{% extends 'base0.html' %}
+
+{% block title %}Greeting and tasks{% endblock %}
+
+{% block content %}
+<h1>{{ greeting }}, користувачу!</h1>
+
+<h2>Сьогоднішні справи:</h2>
+<ul>
+    {% for task in tasks %}
+        <li>{{ task }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
